@@ -11,8 +11,9 @@ function foo(response) {
 }
 
 var script = document.createElement('script');
-script.src = 'https://api.github.com?callback=foo';
+//script.src = 'https://api.github.com?callback=foo';
 
+script.src = 'https://api.github.com/gists?callback=foo';
 document.getElementsByTagName('head')[0].appendChild(script);
 </script>
 </head>
